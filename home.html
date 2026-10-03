@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mausam - Weather App</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/12607/12607703.png">
+
+```
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<div class="app">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <span>☀️</span>
+            <div>
+                <h1>Mausam</h1>
+                <p>Your Weather Companion</p>
+            </div>
+        </div>
+
+        <button class="location-btn" onclick="getLocation()">
+            📍 My Location
+        </button>
+    </header>
+
+    <!-- Search -->
+    <section class="search-section">
+        <input
+            type="text"
+            id="cityInput"
+            placeholder="Search for a city..."
+        >
+        <button onclick="searchWeather()">🔍 Search</button>
+    </section>
+
+    <!-- Current Weather -->
+    <main>
+
+        <section class="weather-card">
+
+            <div class="location">
+                <h2 id="cityName">coimbatore, India</h2>
+                <p id="date">monday, September 28, 2026</p>
+            </div>
+
+            <div class="current-weather">
+
+                <div class="weather-icon" id="weatherIcon">
+                    ☁️
+                </div>
+
+                <div class="temperature">
+                    <h3 id="temperature">30°</h3>
+                    <p id="condition">Cloudy</p>
+                </div>
+
+            </div>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <strong id="humidity">68%</strong>
+                </div>
+
+                <div class="detail">
+                    <span>💨</span>
+                    <p>Wind</p>
+                    <strong id="wind">14 km/h</strong>
+                </div>
+
+                <div class="detail">
+                    <span>🌡️</span>
+                    <p>Feels Like</p>
+                    <strong id="feels">34°</strong>
+                </div>
+
+                <div class="detail">
+                    <span>👁️</span>
+                    <p>Visibility</p>
+                    <strong id="visibility">8 km</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Today's Forecast -->
+        <section class="forecast-section">
+
+            <div class="section-title">
+                <h2>Today's Forecast</h2>
+                <span>Next 6 hours</span>
+            </div>
+
+            <div class="hourly-forecast">
+
+                <div class="forecast-item">
+                    <p>10 AM</p>
+                    <span>☀️</span>
+                    <strong>30°</strong>
+                </div>
+
+                <div class="forecast-item">
+                    <p>12 PM</p>
+                    <span>☀️</span>
+                    <strong>32°</strong>
+                </div>
+
+                <div class="forecast-item">
+                    <p>2 PM</p>
+                    <span>🌤️</span>
+                    <strong>33°</strong>
+                </div>
+
+                <div class="forecast-item">
+                    <p>4 PM</p>
+                    <span>🌤️</span>
+                    <strong>32°</strong>
+                </div>
+
+                <div class="forecast-item">
+                    <p>6 PM</p>
+                    <span>🌥️</span>
+                    <strong>29°</strong>
+                </div>
+
+                <div class="forecast-item">
+                    <p>8 PM</p>
+                    <span>🌙</span>
+                    <strong>27°</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- 5 Day Forecast -->
+        <section class="forecast-section">
+
+            <div class="section-title">
+                <h2>5-Day Forecast</h2>
+            </div>
+
+            <div class="daily-forecast">
+
+                <div class="day">
+                    <strong>Today</strong>
+                    <span>☁️</span>
+                    <p>33° / 27°</p>
+                </div>
+
+                <div class="day">
+                    <strong>Sun</strong>
+                    <span>🌤️</span>
+                    <p>32° / 26°</p>
+                </div>
+
+                <div class="day">
+                    <strong>Mon</strong>
+                    <span>🌦️</span>
+                    <p>30° / 25°</p>
+                </div>
+
+                <div class="day">
+                    <strong>Tue</strong>
+                    <span>🌧️</span>
+                    <p>29° / 24°</p>
+                </div>
+
+                <div class="day">
+                    <strong>Wed</strong>
+                    <span>⛅</span>
+                    <p>31° / 25°</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Weather Advice -->
+        <section class="advice-card">
+            <div>
+                <span class="advice-icon">🧴</span>
+            </div>
+
+            <div>
+                <h2>Today's Advice</h2>
+                <p>
+                    “Cloudy today — carry an umbrella just in case!”
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Mausam Weather App</p>
+        <p>Weather information for your daily life 🌤️</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+```
+
+</body>
+</html>
